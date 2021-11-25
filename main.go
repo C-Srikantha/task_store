@@ -38,13 +38,15 @@ func main() {
 		if err != nil {
 			fmt.Println(err)
 		}
+		//parsing through html
 		result := soup.HTMLParse(resp)
 		m1["code"] = k
 		links := result.Find("div", "class", "post-body")
-		res1 := links.Children()
+		res1 := links.Children() //to get all the childrens from class "post-body"
 		for index, i := range res1 {
-			if _, ok := m1[i.Text()]; ok {
+			if _, ok := m1[i.Text()]; ok { //checking wheather its an header-"h3" tag
 				res := res1[index+1:]
+				//listing paragraph between h3 tags
 				for _, i1 := range res {
 
 					if _, ok1 := m2[i1.Text()]; ok1 {
@@ -52,6 +54,7 @@ func main() {
 						break
 
 					}
+					//rejecting empty strings
 					if i1.Text() != "" {
 						str1 = str1 + i1.Text()
 						/*r := i1.Find("a")
@@ -60,6 +63,7 @@ func main() {
 							//fmt.Println(str1)
 						}*/
 					}
+					//parsing inside ul tags
 					if i1.NodeValue == "ul" {
 						res2 := i1.FindAll("li")
 						for _, j := range res2 {
@@ -71,15 +75,16 @@ func main() {
 							}
 						}
 					}
-					m1[i.Text()] = str1
+
+					m1[i.Text()] = str1 //storing value for the keys
 
 				}
 
 			}
 		}
 		//fmt.Println(m1)
-		det = append(det, m1)
-		str1 = ""
+		det = append(det, m1) //storing maps into array
+		str1 = ""             //clears all contents from variable
 	}
 
 	writefile()
@@ -93,7 +98,8 @@ func writefile() {
 	csvfile := csv.NewWriter(file)
 	defer csvfile.Flush()
 	header := []string{"code", "General_meaning", "Causes", "Symptoms", "Mechanic_diagnosis", "Severity_level", "Suggested_repairs"}
-	csvfile.Write(header)
+	csvfile.Write(header) //writing header of file
+	//storing all datas into file
 	for _, d := range det {
 		code := d["code"]
 		fmt.Println(code)
