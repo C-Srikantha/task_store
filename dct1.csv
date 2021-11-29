@@ -1,0 +1,303 @@
+code,General_meaning,Causes,Symptoms,Mechanic_diagnosis,Severity_level,Suggested_repairs
+P00A6,"This diagnostic trouble code (DTC) is a generic powertrain code, which means that it applies to OBD-II equipped vehicles. Although generic, the specific repair steps may vary depending on make/model.
+The IAT (Intake Air Temperature) sensor is a thermistor that varies resistance based upon the temperature of the engine intake air. It is typically located in the air intake ductwork and is usually a two wire sensor. One wire is supplied 5 Volt from the PCM (Powertrain Control Module) and the other is a ground. The powertrain control module (PCM) monitors the change in the 5 volt supplied to determine air temperature to run the engine at the most efficient conditions possible at the given temperature.
+
+
+When the intake air is cold, the resistance is high, resulting in a high signal voltage. Conversely, when the intake air is warm, the resistance is low, resulting in a low signal voltage. This code means that the PCM saw a larger-than-normal change in a shorter-than-expected time on the #2 IAT signal circuit on bank 2. Bank 2 is the side of the engine that does not contain cylinder #1.
+Related Bank 2 IAT sensor 2 trouble codes include:
+P00A5 Intake Air Temperature Sensor 2 Circuit Bank 2
+P00A7 Intake Air Temperature Sensor 2 Circuit Low Bank 2
+P00A8 Intake Air Temperature Sensor 2 Circuit High Bank 2
+P00A9 Intake Air Temperature Sensor 2 Circuit Intermittent/Erratic Bank 2
+","Potential causes of the P00A6 DTC include: 
+a bad #2 IAT sensor
+an open in the signal or ground circuit
+a short to ground on the signal circuit
+poor connection at sensor or PCM
+","Since this code is likely pointing to an intermittent problem on the IAT circuit, there may not be any symptoms at present. However, the MIL will likely be on. The car MAY exhibit some drivability problems, but it is more likely that there will be no noticeable symptoms to the driver.
+","If there are other IAT codes present, diagnose them first. If not, then, using a scan tool verify the IAT voltage with KOEO (Key on engine off).
+If, on a cold engine it reads the same as the CTS (Coolant temperature sensor), then the problem is intermittent. But if the IAT reading isn't the same as the CTS refer to diagnostic procedure for P0110. If your scan tool has a freeze frame failure records feature, use it to see what the IAT reading was at the time of the failure. If the reading was at negative 30 or so degrees F (indicating it was at the extreme coldest reading), then there was an intermittent high resistance reading on the IAT signal circuit.
+Check for an open ground on the ground circuit and signal circuit. If they are OK, try raising and lowering the temperature of the IAT sensor artificially. Do this by removing the IAT and putting it in a freezer and then applying heat with a heat gun (be careful not to apply too much heat to the IAT with the heat gun or it'll melt the sensor). Watch the resistance change using an ohmmeter attached to each terminal. It should vary smoothly with no sudden jumps. If the reading jumps suddenly, then replace the IAT sensor.
+However if the freeze frame reading was at the highest extreme (above 250 deg. F) then there was an intermittent low resistance on the signal circuit. Check for a short to ground on the signal circuit. If it appears OK, then do the above artificial heat test and replace the IAT as necessary. If the problem can't be duplicated, use a voltmeter to watch the signal voltage as you ""wiggle"" test the wiring harness. Watch for a sudden change in voltage indicating a short or open. Replace IAT as necessary.
+This is a pretty simple code and it only really looks for extremely short changes that are relatively high in voltage. It's usually the sensor that is bad unless the vehicle is extremely old, in which case there may be harness problems.
+","Since this code is likely pointing to an intermittent problem on the IAT circuit, there may not be any symptoms at present. However, the MIL will likely be on. The car MAY exhibit some drivability problems, but it is more likely that there will be no noticeable symptoms to the driver.
+","If there are other IAT codes present, diagnose them first. If not, then, using a scan tool verify the IAT voltage with KOEO (Key on engine off).
+If, on a cold engine it reads the same as the CTS (Coolant temperature sensor), then the problem is intermittent. But if the IAT reading isn't the same as the CTS refer to diagnostic procedure for P0110. If your scan tool has a freeze frame failure records feature, use it to see what the IAT reading was at the time of the failure. If the reading was at negative 30 or so degrees F (indicating it was at the extreme coldest reading), then there was an intermittent high resistance reading on the IAT signal circuit.
+Check for an open ground on the ground circuit and signal circuit. If they are OK, try raising and lowering the temperature of the IAT sensor artificially. Do this by removing the IAT and putting it in a freezer and then applying heat with a heat gun (be careful not to apply too much heat to the IAT with the heat gun or it'll melt the sensor). Watch the resistance change using an ohmmeter attached to each terminal. It should vary smoothly with no sudden jumps. If the reading jumps suddenly, then replace the IAT sensor.
+However if the freeze frame reading was at the highest extreme (above 250 deg. F) then there was an intermittent low resistance on the signal circuit. Check for a short to ground on the signal circuit. If it appears OK, then do the above artificial heat test and replace the IAT as necessary. If the problem can't be duplicated, use a voltmeter to watch the signal voltage as you ""wiggle"" test the wiring harness. Watch for a sudden change in voltage indicating a short or open. Replace IAT as necessary.
+This is a pretty simple code and it only really looks for extremely short changes that are relatively high in voltage. It's usually the sensor that is bad unless the vehicle is extremely old, in which case there may be harness problems.
+"
+P00A7,"This diagnostic trouble code (DTC) is a generic powertrain code, which means that it applies to OBD-II equipped vehicles. Although generic, the specific repair steps may vary depending on make/model.
+The IAT (intake air temperature) sensor simply measures the temperature of air that
+is entering the engine. Intake air temperature is important because the higher the
+intake air, the higher the combustion temperatures. High combustion temperatures
+result in increased Nox (Nitrogen oxides) emissions.
+
+
+To keep these higher temps
+from causing increased combustion temps, the intake air tubing should be intact,
+allowing the engine to ""breathe"" air that isn't sampled from the engine
+compartment. The IAT sensor measures air temp by using a thermistor, or a thermometer of
+sorts. The thermistor is supplied 5 volts reference voltage from the PCM
+(powertrain control module) and a ground. Usually, when the air temperature is cold
+the resistance in the thermistor is high and when the air temperature is warmer, the
+resistance decreases. 
+This change in resistance changes the 5 V reference from the
+PCM, thereby informing the PCM of the temperature of incoming air. If the PCM
+notices that the incoming bank 2 air temp sensor #2 is unusually high, say, 300 degrees, when the
+engine temp is still relatively low, it will set a P00A7. Bank 2 is the side of the engine that does not contain cylinder #1.
+Related Bank 2 IAT sensor 2 trouble codes include:
+P00A5 Intake Air Temperature Sensor 2 Circuit Bank 2
+P00A6 Intake Air Temperature Sensor 2 Circuit Range/Performance Bank 2
+P00A8 Intake Air Temperature Sensor 2 Circuit High Bank 2
+P00A9 Intake Air Temperature Sensor 2 Circuit Intermittent/Erratic Bank 2
+","Usually the P00A7 is caused by a bad #2 IAT (internally shorted or open or otherwise damaged),
+but it could also be:
+No reference voltage to the bank 2 #2 IAT sensor due to an open wire
+Excessively high intake air temperatures
+Short to ground on signal circuit
+Damaged IAT connector
+Bad PCM 
+","There may be no noticeable symptoms of a P00A7 code other than an MIL (Malfunction
+Indicator Lamp). However, a emissions test may reveal higher Nox readings depending
+on the type of IAT failure. Or the engine may ping under load, depending on the
+type of IAT failure.
+","Hook up your scan tool or code reader and read the IAT reading. With a cold engine,
+the IAT should roughly match the coolant reading, since both will read ambient
+temperature. If the IAT #2 is reading excessively high, check the IAT connector for
+damage. If you find none, unplug the IAT sensor and recheck the reading. It should
+now read the minimum, around -20 deg. If it does, then replace the IAT sensor #2.
+But, if the reading is still high, unplug the sensor and check for resistance across
+the two wiring harness terminals. If there is infinite resistance, then the PCM
+itself is bad. If the resistance isn't infinite, then check and repair the short
+to ground on the signal circuit.
+","There may be no noticeable symptoms of a P00A7 code other than an MIL (Malfunction
+Indicator Lamp). However, a emissions test may reveal higher Nox readings depending
+on the type of IAT failure. Or the engine may ping under load, depending on the
+type of IAT failure.
+","Hook up your scan tool or code reader and read the IAT reading. With a cold engine,
+the IAT should roughly match the coolant reading, since both will read ambient
+temperature. If the IAT #2 is reading excessively high, check the IAT connector for
+damage. If you find none, unplug the IAT sensor and recheck the reading. It should
+now read the minimum, around -20 deg. If it does, then replace the IAT sensor #2.
+But, if the reading is still high, unplug the sensor and check for resistance across
+the two wiring harness terminals. If there is infinite resistance, then the PCM
+itself is bad. If the resistance isn't infinite, then check and repair the short
+to ground on the signal circuit.
+"
+P00A8,"This diagnostic trouble code (DTC) is a generic powertrain code, which means that it applies to OBD-II equipped vehicles. Although generic, the specific repair steps may vary depending on make/model.
+The powertrain control module (PCM) monitors the temperature of the air entering
+the engine. The PCM supplies a 5 volt reference voltage to the Intake Air Temperature
+(IAT) sensor
+
+
+The IAT is a thermistor that varies resistance based on temperature.
+As the temperature increases, resistance decreases. Low temperature results
+in a high signal voltage. When the PCM sees a signal voltage higher than 5 volts for the #2 IAT sensor,
+it sets this P00A8 check engine light code. Bank 2 is the side of the engine that does not contain cylinder #1.
+Related Bank 2 IAT sensor 2 trouble codes include:
+P00A5 Intake Air Temperature Sensor 2 Circuit Bank 2
+P00A6 Intake Air Temperature Sensor 2 Circuit Range/Performance Bank 2
+P00A7 Intake Air Temperature Sensor 2 Circuit Low Bank 2
+P00A9 Intake Air Temperature Sensor 2 Circuit Intermittent/Erratic Bank 2
+","A code P00A8 may mean that one or more of the following has happened:
+Internally failed #2 IAT sensor
+ Faulty connection at #2 IAT sensor
+ Open in IAT ground circuit or signal circuit
+ Short to voltage in IAT signal circuit or reference circuit
+IAT harness and/or wiring routed too close to high-voltage wiring (e.g.
+alternator, spark plug cables, etc.)
+ Faulty PCM (less likely but not impossible)
+","There will likely be no symptoms other than illumination of the Malfunction
+Indicator Lamp (MIL - Check Engine Light / Service Engine Soon).
+","First, if you have access to a scan tool, is there an IAT reading? If the IAT
+reading is logical then the problem is likely intermittent. If the reading is
+less than -30 degrees, unplug the connector. Install a jumper wire between the
+harness connector signal and ground circuits. The IAT temperature reading on
+the scan tool should be maxed out at the high end. For example it should be
+280 degrees Farenheit or higher. If it is, the wiring is okay, and it may have
+been the connection. If it isn't install the jumper wire between the IAT signal
+circuit and the chassis ground.
+If now the IAT reading on the scan tool is maxed
+out then check for an open in the IAT ground circuit. If you get no reading
+at all on the scan tool, it's likely that the sensor signal is open or the 5
+volt reference is missing. Check using a DVOM (digital volt ohm meter) for a
+5 volt reference. If it's there, then unplug the connector at the PCM and check
+for continuity on the IAT signal circuit between the PCM connector and the IAT
+connector.
+","There will likely be no symptoms other than illumination of the Malfunction
+Indicator Lamp (MIL - Check Engine Light / Service Engine Soon).
+","First, if you have access to a scan tool, is there an IAT reading? If the IAT
+reading is logical then the problem is likely intermittent. If the reading is
+less than -30 degrees, unplug the connector. Install a jumper wire between the
+harness connector signal and ground circuits. The IAT temperature reading on
+the scan tool should be maxed out at the high end. For example it should be
+280 degrees Farenheit or higher. If it is, the wiring is okay, and it may have
+been the connection. If it isn't install the jumper wire between the IAT signal
+circuit and the chassis ground.
+If now the IAT reading on the scan tool is maxed
+out then check for an open in the IAT ground circuit. If you get no reading
+at all on the scan tool, it's likely that the sensor signal is open or the 5
+volt reference is missing. Check using a DVOM (digital volt ohm meter) for a
+5 volt reference. If it's there, then unplug the connector at the PCM and check
+for continuity on the IAT signal circuit between the PCM connector and the IAT
+connector.
+"
+P0000,"This is a code that is not often seen, that is quite simply because it's not a valid diagnostic trouble code so not many code reading devices display this code.
+Now, you might think that because it starts with P00 like the other P00xx codes that it is a generic powertrain code under the category ""Fuel & Air Metering and Auxiliary Emission Controls Read"". But, it's as we said, it's invalid. 
+
+
+Please note that some code readers that display a P0000 code may indicate the description as ""No Self Diagnostic Failure Indicated"" or ""No Diagnostic Trouble Codes Found"" or possibly something else like ""Unknown"".
+","Potential causes for this code to set are:
+Use of a cheaper or less capable scan tool
+Use of a scan tool that does not support your vehicle (e.g. multipurpose device that plugs into the OBD-II port)
+","There will no symptoms as a result of the P0000 code. You may, however, have symptoms related to other trouble codes. You may or may not have the Malfunction Indicator Lamp illuminated.
+","If you experience only this trouble code and have no symptoms, generally you are fine to just continue driving the vehicle and not worry about it. You may wish to clear the code and check again later to see if the code returns. If it does you may want to use a more advanced scan tool next time.
+If you are having symptoms of a problem and there are other trouble codes along with a P0000, then you should first focus on repairing the other trouble codes. 
+If there are no other codes and you have symptoms of a problem, you should then read the trouble codes again using a different, more advanced code scanner. Be sure to check with the manufacturer of the tool to see if your vehicle is supported.
+","There will no symptoms as a result of the P0000 code. You may, however, have symptoms related to other trouble codes. You may or may not have the Malfunction Indicator Lamp illuminated.
+","If you experience only this trouble code and have no symptoms, generally you are fine to just continue driving the vehicle and not worry about it. You may wish to clear the code and check again later to see if the code returns. If it does you may want to use a more advanced scan tool next time.
+If you are having symptoms of a problem and there are other trouble codes along with a P0000, then you should first focus on repairing the other trouble codes. 
+If there are no other codes and you have symptoms of a problem, you should then read the trouble codes again using a different, more advanced code scanner. Be sure to check with the manufacturer of the tool to see if your vehicle is supported.
+"
+P0001,"This diagnostic trouble code (DTC) is a generic powertrain code, which means that it applies to OBD-II equipped vehicles, including but not limited to Ford, Dodge, Vauxhall, VW, Mazda, etc. Although generic, the specific repair steps may vary depending on make/model.
+A P0001 is not a very common trouble code and is more often seen on common rail diesel (CRD) and/or diesel engine, and gasoline direct injection (GDI) equipped vehicles.
+
+
+This code relates to the the electrical system as part of the fuel volume regulator system. Automotive fuel systems consist of many components, the fuel tank, fuel pump, filter, lines, injectors, etc. One component in high pressure fuel systems is a high pressure fuel pump. It's job is to increase the fuel pressure for the very high pressure needed at the fuel rail for the injectors. These high pressure fuel pumps have a low pressure side and high pressure side, and a fuel volume regulator which controls the pressure. For this P0001 code, it refers to an electrical reading that is ""open"".
+This code is related to P0002, P0003, and P0004.
+","Potential causes of this engine code may include:
+Failed fuel volume regulator (FVR) solenoid
+FVR wiring/harness electrical problem (wiring short, corrosion, etc.)
+","Symptoms of a P0001 DTC may include:
+Malfunction indicator lamp (MIL) illumination
+Vehicle won't start
+""Limp mode"" enabled and/or lack of power
+","First, check for known Technical Service Bulletins (TSBs) for your year/make/model. If there is a known TSB that addresses this issue, it can save you time & money during diagnosis.
+Next, you'll want to visually inspect the wiring and connectors pertaining to the fuel volume regulator circuit and system. Look for obvious breaks in the wires, corrosion, etc. Repair as necessary.
+The fuel volume regulator (FVR) is a two-wire device with the wires both going back to the PCM. You should not apply direct battery voltage to the wires or you could damage the system.
+ Refer to a factory service manual for more specific troubleshooting steps for your year/make/model/engine.
+","Symptoms of a P0001 DTC may include:
+Malfunction indicator lamp (MIL) illumination
+Vehicle won't start
+""Limp mode"" enabled and/or lack of power
+","First, check for known Technical Service Bulletins (TSBs) for your year/make/model. If there is a known TSB that addresses this issue, it can save you time & money during diagnosis.
+Next, you'll want to visually inspect the wiring and connectors pertaining to the fuel volume regulator circuit and system. Look for obvious breaks in the wires, corrosion, etc. Repair as necessary.
+The fuel volume regulator (FVR) is a two-wire device with the wires both going back to the PCM. You should not apply direct battery voltage to the wires or you could damage the system.
+ Refer to a factory service manual for more specific troubleshooting steps for your year/make/model/engine.
+"
+P0002,"This diagnostic trouble code (DTC) is a generic powertrain code, which means that it applies to OBD-II equipped vehicles, including but not limited to Ford, Dodge, Vauxhall, VW, Mazda, etc. Although generic, the specific repair steps may vary depending on make/model.
+A P0002 is not a very common trouble code and is more often seen on common rail diesel (CRD) and/or diesel engine, and gasoline direct injection (GDI) equipped vehicles.
+
+
+This code relates to the the electrical system as part of the fuel volume regulator system. Automotive fuel systems consist of many components, the fuel tank, fuel pump, filter, lines, injectors, etc. One component in high pressure fuel systems is a high pressure fuel pump. It's job is to increase the fuel pressure for the very high pressure needed at the fuel rail for the injectors. These high pressure fuel pumps have a low pressure side and high pressure side, and a fuel volume regulator which controls the pressure. For this P0002 code, it refers to an electrical reading that is outside normal parameters.
+This code is related to P0001, P0003, and P0004.
+","Potential causes of this engine code may include:
+Failed fuel volume regulator (FVR) solenoid
+FVR wiring/harness electrical problem (wiring short, corrosion, etc.)
+","Symptoms of a P0002 DTC may include:
+Malfunction indicator lamp (MIL) illumination
+Vehicle won't start
+""Limp mode"" enabled and/or lack of power
+","First, check for known Technical Service Bulletins (TSBs) for your year/make/model. If there is a known TSB that addresses this issue, it can save you time & money during diagnosis.
+Next, you'll want to visually inspect the wiring and connectors pertaining to the fuel volume regulator circuit and system. Look for obvious breaks in the wires, corrosion, etc. Repair as necessary.
+The fuel volume regulator (FVR) is a two-wire device with the wires both going back to the PCM. You should not apply direct battery voltage to the wires or you could damage the system.
+ Refer to a factory service manual for more specific troubleshooting steps for your year/make/model/engine.
+","Symptoms of a P0002 DTC may include:
+Malfunction indicator lamp (MIL) illumination
+Vehicle won't start
+""Limp mode"" enabled and/or lack of power
+","First, check for known Technical Service Bulletins (TSBs) for your year/make/model. If there is a known TSB that addresses this issue, it can save you time & money during diagnosis.
+Next, you'll want to visually inspect the wiring and connectors pertaining to the fuel volume regulator circuit and system. Look for obvious breaks in the wires, corrosion, etc. Repair as necessary.
+The fuel volume regulator (FVR) is a two-wire device with the wires both going back to the PCM. You should not apply direct battery voltage to the wires or you could damage the system.
+ Refer to a factory service manual for more specific troubleshooting steps for your year/make/model/engine.
+"
+P00A9,"This diagnostic trouble code (DTC) is a generic powertrain code, which means that it applies to all 1996-newer vehicles (Ford, Mazda, Mercedes Benz, etc.). Although generic, the specific repair steps may vary depending on make/model.
+A stored code P00A9 means that the powertrain control module (PCM) has detected an intermittent input signal from the #2 intake air temperature (IAT) sensor circuit on bank 2. Bank 2 is the side of the engine that does not contain the number one cylinder.
+
+
+The PCM uses the IAT input signal and the mass airflow (MAF) sensor input signal to calculate fuel delivery and ignition timing strategy. Since maintaining a correct air/fuel ratio (typically 14:1) is critical to engine performance and fuel efficiency, the input of the IAT sensor is very important.
+The IAT sensor can be threaded directly into the intake manifold but is more commonly inserted into the air inlet pipe or air cleaner box. Some manufacturers also integrate the IAT sensor into the MAF sensor housing. At any rate, it must be positioned so that (with the engine running) ambient air, drawn into the intake manifold through the throttle body, can continuously and consistently flow across it. 
+The IAT sensor is usually a two-wire thermistor sensor. Sensor resistance varies according to the temperature of the air that flows across the cold wire element. Most OBD II equipped vehicles utilize a reference voltage (five-volts is normal) and a ground signal to complete the IAT sensor circuit. The varying resistance levels in the IAT sensor element cause voltage fluctuations in the input circuit. These fluctuations are interpreted by the PCM as changes in intake air temperature.
+If the PCM detects a certain number of intermittent signals from the bank 2 number 2 IAT sensor, over a set period of time, a code P00A9 will be stored and a malfunction indicator lamp may be illuminated. 
+Related Bank 2 IAT sensor 2 trouble codes include:
+P00A5 Intake Air Temperature Sensor 2 Circuit Bank 2
+P00A6 Intake Air Temperature Sensor 2 Circuit Range/Performance Bank 2
+P00A7 Intake Air Temperature Sensor 2 Circuit Low Bank 2
+P00A8 Intake Air Temperature Sensor 2 Circuit High Bank 2
+","Possible causes for this engine code include:
+ Open or shorted #2 IAT sensor wiring and/or connectors (bank 2)
+ Defective #2 IAT sensor (bank 2)
+ Faulty MAF sensor 
+ Clogged air filter 
+ Broken intake air inlet pipe
+","The IAT sensor signal is used by the PCM to calculate fuel delivery strategy, therefore a code P00A9 should be treated as severe.
+Symptoms of a P00A9 code may include:
+ Slightly diminished fuel efficiency 
+ Decreased engine performance (especially upon cold start) 
+ Hesitation or surge at idle or upon light acceleration 
+ Other drivability codes may be stored
+","A good starting point is always to check for technical service bulletins (TSB) for your particular vehicle. Your issue may be a known issue with a known fix put out by the manufacturer and can save you time and money during diagnosis.
+When faced with diagnosing a code P00A9, I like to have a suitable diagnostic scanner, a digital volt/ohmmeter (DVOM), an infrared thermometer, and a reliable vehicle information source (such as All Data DIY) at my disposal.
+Connect the scanner to the vehicle diagnostic connector and retrieve the stored trouble codes and applicable freeze frame data. I normally write this information down in case I need it later. Clear the codes and test drive the vehicle. If the code is immediately reset, proceed with the diagnostic process.
+Most professional technicians begin with a visual inspection of IAT sensor related wiring and connectors (don’t forget the air filter and the air inlet pipe). Pay careful attention to the sensor connector as it is susceptible to corrosion because of its close proximity to the battery and coolant reservoir.
+If the system wiring, connectors, and components appear to be in working order, proceed by connecting the scanner to the diagnostic connector and opening the data stream. By narrowing the data stream to include only pertinent data, you will get a faster response. Use the infrared thermometer to make sure that the IAT reading (on the scanner) correctly reflects actual intake air temperature.
+If it is incorrect, consult your vehicle information source for IAT sensor testing recommendations. Use the DVOM to test the sensor and compare your findings with vehicle specifications. Replace the sensor if it fails to comply. 
+If the sensor passes the resistance test, check for a sensor reference voltage and a ground. If either one of these are not present repair the open or shorted circuit and retest the system. If system reference and ground signals are present, obtain an IAT sensor voltage to temperature chart from your vehicle information source and use the DVOM to test sensor output voltage. Compare the voltage with the voltage to temperature chart and replace the sensor if actual findings vary from maximum recommended tolerances.
+If actual IAT input voltage is within specifications, disconnect the electrical connector/s from all related controllers and use the DVOM to test resistance and continuity on all system circuits. Repair or replace circuits that prove to be open or shorted and retest the system.
+If the IAT sensor and all system circuits are within recommended specifications, suspect a defective PCM or a PCM programming error.
+Additional diagnostic notes:
+By far, the most common cause of a P00A9 being stored is a disconnected #2 IAT sensor connector on bank 2. When the air filter is checked or replaced, the IAT sensor is often left disconnected. If your vehicle has recently been service, and a code P00A9 is suddenly stored, suspect that the IAT sensor has simply been left unplugged.
+","The IAT sensor signal is used by the PCM to calculate fuel delivery strategy, therefore a code P00A9 should be treated as severe.
+Symptoms of a P00A9 code may include:
+ Slightly diminished fuel efficiency 
+ Decreased engine performance (especially upon cold start) 
+ Hesitation or surge at idle or upon light acceleration 
+ Other drivability codes may be stored
+","A good starting point is always to check for technical service bulletins (TSB) for your particular vehicle. Your issue may be a known issue with a known fix put out by the manufacturer and can save you time and money during diagnosis.
+When faced with diagnosing a code P00A9, I like to have a suitable diagnostic scanner, a digital volt/ohmmeter (DVOM), an infrared thermometer, and a reliable vehicle information source (such as All Data DIY) at my disposal.
+Connect the scanner to the vehicle diagnostic connector and retrieve the stored trouble codes and applicable freeze frame data. I normally write this information down in case I need it later. Clear the codes and test drive the vehicle. If the code is immediately reset, proceed with the diagnostic process.
+Most professional technicians begin with a visual inspection of IAT sensor related wiring and connectors (don’t forget the air filter and the air inlet pipe). Pay careful attention to the sensor connector as it is susceptible to corrosion because of its close proximity to the battery and coolant reservoir.
+If the system wiring, connectors, and components appear to be in working order, proceed by connecting the scanner to the diagnostic connector and opening the data stream. By narrowing the data stream to include only pertinent data, you will get a faster response. Use the infrared thermometer to make sure that the IAT reading (on the scanner) correctly reflects actual intake air temperature.
+If it is incorrect, consult your vehicle information source for IAT sensor testing recommendations. Use the DVOM to test the sensor and compare your findings with vehicle specifications. Replace the sensor if it fails to comply. 
+If the sensor passes the resistance test, check for a sensor reference voltage and a ground. If either one of these are not present repair the open or shorted circuit and retest the system. If system reference and ground signals are present, obtain an IAT sensor voltage to temperature chart from your vehicle information source and use the DVOM to test sensor output voltage. Compare the voltage with the voltage to temperature chart and replace the sensor if actual findings vary from maximum recommended tolerances.
+If actual IAT input voltage is within specifications, disconnect the electrical connector/s from all related controllers and use the DVOM to test resistance and continuity on all system circuits. Repair or replace circuits that prove to be open or shorted and retest the system.
+If the IAT sensor and all system circuits are within recommended specifications, suspect a defective PCM or a PCM programming error.
+Additional diagnostic notes:
+By far, the most common cause of a P00A9 being stored is a disconnected #2 IAT sensor connector on bank 2. When the air filter is checked or replaced, the IAT sensor is often left disconnected. If your vehicle has recently been service, and a code P00A9 is suddenly stored, suspect that the IAT sensor has simply been left unplugged.
+"
+P00A5,"This diagnostic trouble code (DTC) is a generic powertrain code, which means that it applies to OBD-II equipped vehicles. Although generic, the specific repair steps may vary depending on make/model.
+The IAT (Intake Air Temperature) sensor is a thermistor, which basically means it measures air temperature by detecting resistance in the air. It's usually located somewhere in the intake air ductwork, but can be located in the intake manifold on some applications. It is usually a two wire sensor supplied with a 5 volt reference wire (which also acts as a signal wire) from the PCM (Powertrain Control Module) and a ground wire. 
+
+
+As air passes over the sensor the resistance changes. This change in resistance affects the 5 Volts supplied to the sensor accordingly. Colder air causes higher resistance and higher signal voltage & warmer air lower resistance and lower signal voltage. The powertrain control module (PCM) monitors this change in the 5 Volts and calculates air temperature to help operate the engine at the most efficient point possible at any given temperature.
+If the PCM detects a voltage that is out of normal operating range for the #2 sensor on bank 2, a P00A5 will set. Bank 2 is the side of the engine that does not contain cylinder #1.
+Related Bank 2 IAT sensor 2 trouble codes include:
+P00A6 Intake Air Temperature Sensor 2 Circuit Range/Performance Bank 2
+P00A7 Intake Air Temperature Sensor 2 Circuit Low Bank 2
+P00A8 Intake Air Temperature Sensor 2 Circuit High Bank 2
+P00A9 Intake Air Temperature Sensor 2 Circuit Intermittent/Erratic Bank 2
+","Potential causes of the P00A5 DTC include: 
+IAT sensor shifted out of airflow
+Bad IAT sensor #2
+Shorted to ground or open on signal circuit to IAT
+Open in ground circuit to IAT
+Poor connection at IAT (backed out terminals, broken connector locks, etc.)
+Bad PCM 
+","There may be no noticeable symptoms other than MIL (Malfunction Indicator Lamp) illumination. However, it could be possible that you may experience poor drivability complaints. 
+","First visually check that the IAT is in place and hasn't been dislodged. As a quick check of the IAT, use a scan tool & check for IAT reading with KOEO (Key on engine off). If the engine is cold, the IAT reading should be the same as the CTS (Coolant temperature sensor) reading. If it shows more than a few degrees variance (for example, if it indicates a temperature extreme like negative 40 deg. or 300 deg. then obviously there's a problem) unplug the IAT and do a resistance test across the two terminals.
+Each sensor will have different resistances so you'll have to get that info from a repair manual. If the resistance of the IAT sensor isn't within specs, replace the sensor. There should be some resistance, so if it measures infinite resistance, replace the sensor.
+Having said that, here is a little more diagnostic info if that doesn't take care of it:
+1. If your KOEO IAT reading is at the high extreme, like 300 deg. (which obviously is inaccurate), disconnect the IAT sensor. If the reading now shows the lowest extreme (-50 or so), then replace the IAT sensor. However, if when unplugging the IAT, the reading doesn't change then turn off the ignition and disconnect the PCM connector. Use a voltmeter to check for continuity between a good ground and the signal wire to the IAT. If there is continuity, then repair short to ground on the signal wire. If there is not continuity, then the PCM may have a problem
+2. If your KOEO IAT reading is at the low extreme, again disconnect the IAT connector. Check that there is 5 Volts on the signal and the other is grounded.
+a. If you have 5 volts present and a good ground, jumper the two terminals together. Now the reading on the scanner should be at the high extreme. If it is, replace the IAT sensor. But if it stays low even after you jumper the two wires together, then there may be an open in the wiring harness or a problem with the PCM.
+b. If you don't have 5 Volts present, then check for reference voltage back at the PCM connector. If it's present there but not at the IAT sensor, repair the open in the signal wire.
+","There may be no noticeable symptoms other than MIL (Malfunction Indicator Lamp) illumination. However, it could be possible that you may experience poor drivability complaints. 
+","First visually check that the IAT is in place and hasn't been dislodged. As a quick check of the IAT, use a scan tool & check for IAT reading with KOEO (Key on engine off). If the engine is cold, the IAT reading should be the same as the CTS (Coolant temperature sensor) reading. If it shows more than a few degrees variance (for example, if it indicates a temperature extreme like negative 40 deg. or 300 deg. then obviously there's a problem) unplug the IAT and do a resistance test across the two terminals.
+Each sensor will have different resistances so you'll have to get that info from a repair manual. If the resistance of the IAT sensor isn't within specs, replace the sensor. There should be some resistance, so if it measures infinite resistance, replace the sensor.
+Having said that, here is a little more diagnostic info if that doesn't take care of it:
+1. If your KOEO IAT reading is at the high extreme, like 300 deg. (which obviously is inaccurate), disconnect the IAT sensor. If the reading now shows the lowest extreme (-50 or so), then replace the IAT sensor. However, if when unplugging the IAT, the reading doesn't change then turn off the ignition and disconnect the PCM connector. Use a voltmeter to check for continuity between a good ground and the signal wire to the IAT. If there is continuity, then repair short to ground on the signal wire. If there is not continuity, then the PCM may have a problem
+2. If your KOEO IAT reading is at the low extreme, again disconnect the IAT connector. Check that there is 5 Volts on the signal and the other is grounded.
+a. If you have 5 volts present and a good ground, jumper the two terminals together. Now the reading on the scanner should be at the high extreme. If it is, replace the IAT sensor. But if it stays low even after you jumper the two wires together, then there may be an open in the wiring harness or a problem with the PCM.
+b. If you don't have 5 Volts present, then check for reference voltage back at the PCM connector. If it's present there but not at the IAT sensor, repair the open in the signal wire.
+"
