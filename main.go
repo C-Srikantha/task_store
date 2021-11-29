@@ -5,6 +5,6 @@ import (
 )
 
 func main() {
-	webpage.Autoblog()
-	//webpage.Obdcodes()
+	//webpage.Autoblog()
+	webpage.Obdcodes()
 }
